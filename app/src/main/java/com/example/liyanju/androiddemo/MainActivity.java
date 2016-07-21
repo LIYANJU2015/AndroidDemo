@@ -1,21 +1,30 @@
 package com.example.liyanju.androiddemo;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.liyanju.androiddemo.asynBinder.AsynBinderActivity;
+import com.example.liyanju.androiddemo.cootek.CootekApiActivity;
+import com.example.liyanju.androiddemo.customview.DrawBitmapActivity;
+import com.example.liyanju.androiddemo.dianhuabang.DianhuaBangActivity;
+import com.example.liyanju.androiddemo.input.InputActivity;
+import com.example.liyanju.androiddemo.phone360.Phone360Activity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
-    String items[] = {"binder异步回调"};
+    String items[] = {"binder异步回调", "input ", "CootekApiActivity",
+            "Phone360Activity", "DianhuaBangActivity", "DrawBitmapActivity"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +66,21 @@ public class MainActivity extends AppCompatActivity {
                 switch (position){
                     case 0:
                         MainActivity.this.startActivity(new Intent(MainActivity.this, AsynBinderActivity.class));
+                        break;
+                    case 1:
+                        MainActivity.this.startActivity(new Intent(MainActivity.this, InputActivity.class));
+                        break;
+                    case 2:
+                        MainActivity.this.startActivity(new Intent(MainActivity.this, CootekApiActivity.class));
+                        break;
+                    case 3:
+                        MainActivity.this.startActivity(new Intent(MainActivity.this, Phone360Activity.class));
+                        break;
+                    case 4:
+                        MainActivity.this.startActivity(new Intent(MainActivity.this, DianhuaBangActivity.class));
+                        break;
+                    case 5:
+                        MainActivity.this.startActivity(new Intent(MainActivity.this, DrawBitmapActivity.class));
                         break;
                 }
             }

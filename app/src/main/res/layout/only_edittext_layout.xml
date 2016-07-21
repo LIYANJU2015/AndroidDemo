@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    >-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    >
+
+    <TextView
+        android:fontFamily="Roboto-bold"
+        android:id="@+id/number_verify_name"
+        android:textSize="23dp"
+
+
+        android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="Roboto-Regular"
+        android:textSize="18dp"
+        android:layout_below="@id/number_verify_name"
+
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        android:id="@+id/number_verify_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/number_verify_title"
+        android:id="@+id/number_input_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/country_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="+19"
+            android:textSize="24dp"
+
+            android:drawablePadding="12dp"
+            android:fontFamily="Roboto-Regular" />
+
+        <EditText
+            android:id="@+id/phone_number_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24dp"
+
+            android:fontFamily="Roboto-Regular"
+            android:digits="1234567890*#+"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/number_input_linear"
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+
+    <Button
+        android:textSize="16dp"
+
+        android:fontFamily="Roboto-Regular"
+
+        android:layout_below="@id/number_input_linear"
+        android:layout_marginTop="32dp"
+        android:id="@+id/phone_number_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="confirrr" />
+
+</RelativeLayout>
+    <!--
+    </ScrollView> -->

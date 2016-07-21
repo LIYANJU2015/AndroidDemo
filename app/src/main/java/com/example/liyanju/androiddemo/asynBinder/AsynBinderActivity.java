@@ -7,7 +7,6 @@ import android.content.ServiceConnection;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.os.PersistableBundle;
 import android.os.RemoteException;
 import android.util.Log;
 import android.view.View;
@@ -83,11 +82,11 @@ public class AsynBinderActivity extends Activity {
      */
     private GoogleApiClient client;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
-
-    }
+//    @Override
+//    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+//        super.onCreate(savedInstanceState, persistentState);
+//
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
