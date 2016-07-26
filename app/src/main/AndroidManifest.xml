@@ -91,6 +91,8 @@
         <activity android:name=".dianhuabang.DianhuaBangActivity"></activity>
 
         <activity android:name=".customview.DrawBitmapActivity"></activity>
+
+        <activity android:name=".customview.BezierActivity"></activity>
     </application>
 
 </manifest>

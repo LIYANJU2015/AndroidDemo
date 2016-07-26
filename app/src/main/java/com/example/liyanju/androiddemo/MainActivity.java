@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.example.liyanju.androiddemo.asynBinder.AsynBinderActivity;
 import com.example.liyanju.androiddemo.cootek.CootekApiActivity;
+import com.example.liyanju.androiddemo.customview.BezierActivity;
 import com.example.liyanju.androiddemo.customview.DrawBitmapActivity;
 import com.example.liyanju.androiddemo.dianhuabang.DianhuaBangActivity;
 import com.example.liyanju.androiddemo.input.InputActivity;
@@ -24,7 +25,7 @@ import com.example.liyanju.androiddemo.phone360.Phone360Activity;
 public class MainActivity extends Activity {
 
     String items[] = {"binder异步回调", "input ", "CootekApiActivity",
-            "Phone360Activity", "DianhuaBangActivity", "DrawBitmapActivity"};
+            "Phone360Activity", "DianhuaBangActivity", "DrawBitmapActivity", "BezierActivity"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +82,9 @@ public class MainActivity extends Activity {
                         break;
                     case 5:
                         MainActivity.this.startActivity(new Intent(MainActivity.this, DrawBitmapActivity.class));
+                        break;
+                    case 6:
+                        MainActivity.this.startActivity(new Intent(MainActivity.this, BezierActivity.class));
                         break;
                 }
             }
