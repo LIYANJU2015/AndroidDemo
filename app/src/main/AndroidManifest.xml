@@ -93,6 +93,10 @@
         <activity android:name=".customview.DrawBitmapActivity"></activity>
 
         <activity android:name=".customview.BezierActivity"></activity>
+
+        <activity android:name=".customview.coupondisplay.MyCouponDisplayActivity"></activity>
+
+        <activity android:name=".customview.XFermodeActivity"></activity>
     </application>
 
 </manifest>

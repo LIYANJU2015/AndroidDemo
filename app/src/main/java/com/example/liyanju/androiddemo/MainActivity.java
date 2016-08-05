@@ -18,6 +18,8 @@ import com.example.liyanju.androiddemo.asynBinder.AsynBinderActivity;
 import com.example.liyanju.androiddemo.cootek.CootekApiActivity;
 import com.example.liyanju.androiddemo.customview.BezierActivity;
 import com.example.liyanju.androiddemo.customview.DrawBitmapActivity;
+import com.example.liyanju.androiddemo.customview.XFermodeActivity;
+import com.example.liyanju.androiddemo.customview.coupondisplay.MyCouponDisplayActivity;
 import com.example.liyanju.androiddemo.dianhuabang.DianhuaBangActivity;
 import com.example.liyanju.androiddemo.input.InputActivity;
 import com.example.liyanju.androiddemo.phone360.Phone360Activity;
@@ -25,7 +27,8 @@ import com.example.liyanju.androiddemo.phone360.Phone360Activity;
 public class MainActivity extends Activity {
 
     String items[] = {"binder异步回调", "input ", "CootekApiActivity",
-            "Phone360Activity", "DianhuaBangActivity", "DrawBitmapActivity", "BezierActivity"};
+            "Phone360Activity", "DianhuaBangActivity", "DrawBitmapActivity",
+            "BezierActivity", "MyCouponDisplayActivity", "XFermodeActivity"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +88,12 @@ public class MainActivity extends Activity {
                         break;
                     case 6:
                         MainActivity.this.startActivity(new Intent(MainActivity.this, BezierActivity.class));
+                        break;
+                    case 7:
+                        MainActivity.this.startActivity(new Intent(MainActivity.this, MyCouponDisplayActivity.class));
+                        break;
+                    case 8:
+                        MainActivity.this.startActivity(new Intent(MainActivity.this, XFermodeActivity.class));
                         break;
                 }
             }
