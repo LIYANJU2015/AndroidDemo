@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.liyanju.androiddemo.R;
 
@@ -28,6 +30,13 @@ public class InputActivity extends Activity{
 
 //        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 //        imm.hideSoftInputFromWindow(editText.getWindowToken(),0);
+
+        findViewById(R.id.number_verify_name).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "ssdfdsf", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
     }

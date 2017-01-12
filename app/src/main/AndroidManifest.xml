@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.liyanju.androiddemo">
+
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -63,6 +64,8 @@
 
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"></uses-permission>
+
 
     <application
         android:name="com.example.liyanju.androiddemo.AppApplication"
@@ -84,8 +87,14 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".asynBinder.AsynBinderActivity"></activity>
-        <activity android:name=".input.InputActivity" android:windowSoftInputMode="adjustResize"></activity>
-        <service android:name=".asynBinder.BinderService" android:process=":service"></service>
+        <activity
+            android:name=".input.InputActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <service
+            android:name=".asynBinder.BinderService"
+            android:process=":service"></service>
+
         <activity android:name=".cootek.CootekApiActivity"></activity>
         <activity android:name=".phone360.Phone360Activity"></activity>
         <activity android:name=".dianhuabang.DianhuaBangActivity"></activity>
@@ -97,6 +106,33 @@
         <activity android:name=".customview.coupondisplay.MyCouponDisplayActivity"></activity>
 
         <activity android:name=".customview.XFermodeActivity"></activity>
+
+        <activity android:name=".camera.CameraActivity"></activity>
+
+
+
+        <service
+            android:name=".NotificationListener"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".binder.SpecialBinderService" android:process=":pro"/>
+        <activity android:name=".binder.SpecialBinderActivity"/>
+
+        <activity android:name=".eventbus.EventbusActivity2"/>
+        <activity android:name=".eventbus.EventbusActivity1"/>
+
+        <activity android:name=".customview.CustomviewActivity"></activity>
+
+        <activity android:name=".plugin.PluginActivity"/>
+
+        <activity android:name=".plugin.Plugin1" />
+
+        <activity android:name=".retrofit.RetrofitDemoActivity"/>
+
     </application>
 
 </manifest>

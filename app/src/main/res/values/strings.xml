@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidDemo</string>
+    <string name="test">You have reported &lt;font color=&amp;quot;#000000&amp;quot;>%1$d&lt;/font> People identify &lt;font color=&amp;quot;#000000&amp;quot;>%2$d&lt;/font> strange calls.</string>
+    <string name="test2">Esta llam spam puede causar riesgos de &lt;font color=&quot;#FFF57D&quot;>divulgación de privacidad&lt;/font></string>
 </resources>

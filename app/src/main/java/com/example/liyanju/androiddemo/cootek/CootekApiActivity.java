@@ -2,9 +2,11 @@ package com.example.liyanju.androiddemo.cootek;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.liyanju.androiddemo.R;
 import com.squareup.okhttp.MediaType;
@@ -52,6 +54,9 @@ public class CootekApiActivity extends Activity{
                 }).start();
             }
         });
+
+        TextView tv = (TextView) findViewById(R.id.tv);
+        tv.setText(Html.fromHtml(getResources().getString(R.string.test)));
     }
 
     private void requestCookeApi(){
